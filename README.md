@@ -13,8 +13,8 @@ EyeQ dataset has 28,792 retinal images with a three-level quality grading (i.e.,
 ![Examples of different retinal image quality grades.](figure/quality_label.jpg)
 
 
-| Train   |  - |  - | - | -  |  -  |  Test | -   |  - | -  |  - |   -  | Total |
-| ---| ---| ---  |--- |--- | --- |  --- | --- | ---  | ---| --- | ---   |  --- |
+|  | Train   |  - |  - | - | -  |  -  |  Test | -   |  - | -  |  - |   -  | Total |
+| --- | ---| ---| ---  |--- |--- | --- |  --- | --- | ---  | ---| --- | ---   |  --- |
 |  | DR-0  | DR-1 | DR-2  | DR-3 | DR-4 |  All   |  DR-0  | DR-1  | DR-2  | DR-3 | DR-4 |  All   |     |          
 Good   | 6,342 | 699  | 1,100 | 167  |  39  | 8,347  | 5,966  |  886  | 1,354 | 199  |  65  | 8,470  |     16,817  |    
 Usable | 1,353 | 103  |  283  |  79  |  58  | 1,896  | 3,201  |  359  |  721  | 145  | 133  | 4,559  |      6,435  |     
