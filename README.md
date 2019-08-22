@@ -1,6 +1,6 @@
 # Eye-Quality (EyeQ) Assessment Dataset 
 
-The project web for "Evaluation of Retinal Image Quality Assessment"
+The project web for "Evaluation of Retinal Image Quality Assessment Networks in Different Color-spaces" in MICCAI 2019.
 
 ----------------
 
@@ -13,12 +13,13 @@ EyeQ dataset has 28,792 retinal images with a three-level quality grading (i.e.,
 ![Examples of different retinal image quality grades.](figure/quality_label.jpg)
 
 
-|  | Train   |  - |  - | - | -  |  -  |  Test | -   |  - | -  |  - |   -  | Total |
-| --- | ---| ---| ---  |--- |--- | --- |  --- | --- | ---  | ---| --- | ---   |  --- |
-|  | DR-0  | DR-1 | DR-2  | DR-3 | DR-4 |  All   |  DR-0  | DR-1  | DR-2  | DR-3 | DR-4 |  All   |     |          
-Good   | 6,342 | 699  | 1,100 | 167  |  39  | 8,347  | 5,966  |  886  | 1,354 | 199  |  65  | 8,470  |     16,817  |    
-Usable | 1,353 | 103  |  283  |  79  |  58  | 1,896  | 3,201  |  359  |  721  | 145  | 133  | 4,559  |      6,435  |     
-Reject | 1,544 | 109  |  426  |  87  | 154  | 2,320  | 2,195  |  153  |  569  | 104  | 199  | 3,220  |      5,540  |    
+
+|      | Train |  -   |  -    | -    | -    |  -     |  Test  | -     |  -    | -    |  -   |   -    | Total  |
+| ---  | ---   | ---  | ---   |---   |---   | ---    |  ---   | ---   | ---   | ---  | ---  | ---    |  ---   |
+|      | DR-0  | DR-1 | DR-2  | DR-3 | DR-4 |  All   |  DR-0  | DR-1  | DR-2  | DR-3 | DR-4 |  All   |        |          
+Good   | 6,342 | 699  | 1,100 | 167  |  39  | 8,347  | 5,966  |  886  | 1,354 | 199  |  65  | 8,470  | 16,817 |    
+Usable | 1,353 | 103  |  283  |  79  |  58  | 1,896  | 3,201  |  359  |  721  | 145  | 133  | 4,559  | 6,435  |     
+Reject | 1,544 | 109  |  426  |  87  | 154  | 2,320  | 2,195  |  153  |  569  | 104  | 199  | 3,220  | 5,540  |    
 Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 448  | 397  | 16,249 | 28,792 |
 
 
