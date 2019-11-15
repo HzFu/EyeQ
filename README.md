@@ -28,7 +28,8 @@ Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 
 
 1. The original fundus images could be downloaded from  [EyePACS dataset](https://www.kaggle.com/c/diabetic-retinopathy-detection). 
 2. All the original fundus images should be pre-porcessed by 'EyeQ\_process\_main.py' in folder 'EyeQ_preprocess'.
-3. The quality label is in 'Label\_EyeQ\_v1.xlsx', where the 'train' and 'test' list is divided by EyePACS, and the 'DR\_grade' label is also from EyePACS.
+3. The quality label is in 'data' folder, where the 'Label\_EyeQ\_train.csv' and 'Label\_EyeQ\_test.csv' are divided by EyePACS, and the 'DR\_grade' label is also from EyePACS.
+4. We also proposed our Multiple Color-space Fusion Network (MCF-Net) based on ResNet121 in 'MCFNet' folder.
 
  
 ----------------
@@ -45,4 +46,5 @@ If you use this dataset and code, please cite the following papers:
 
 Update log:
 
+- 19.11.15: Released the code of MCF-Net.
 - 19.07.10: Released the dataset.
