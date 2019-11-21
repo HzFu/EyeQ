@@ -98,17 +98,17 @@ test_loader = torch.utils.data.DataLoader(dataset=data_test, batch_size=args.bat
 # for epoch in range(0, args.epochs):
 #     _ = train_step(train_loader, model, epoch, optimizer, criterion, args)
 #     validation_loss = validation_step(val_loader, model, criterion)
-#     print('Current mIoU: {}| Best mIoU: {} at epoch: {}'.format(validation_loss, best_metric, best_iter))
+#     print('Current Loss: {}| Best Loss: {} at epoch: {}'.format(validation_loss, best_metric, best_iter))
 #
 #     # save model
 #     if best_metric > validation_loss:
 #         best_metric = validation_loss
 #         best_iter = epoch
-#         model_dir = os.path.join(args.save_dir, args.save_model + '.tar')
+#         model_save_file = os.path.join(args.save_dir, args.save_model + '.tar')
 #         if not os.path.exists(args.save_dir):
 #             os.makedirs(args.save_dir)
-#         torch.save({'state_dict': model.state_dict(), 'best_metric': best_metric}, model_dir)
-#         print('Model saved to %s' % model_dir)
+#         torch.save({'state_dict': model.state_dict(), 'best_loss': best_metric}, model_save_file)
+#         print('Model saved to %s' % model_save_file)
 
 
 # Testing
