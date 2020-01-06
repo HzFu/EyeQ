@@ -34,6 +34,9 @@ Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 
 
 **Note:** The trained model  of MCF-Net *'DenseNet121\_v3\_v1.tar'* (~112MB) could be download from [OneDrive](https://1drv.ms/u/s!ArBRrL8ao6jznU6IQflxPqM3-VXC?e=wNcWvD).
 
+**Note:** The following images could not be processed by the preprocesssing code. You may need to crop them manually. 
+For training images: '15337_left.jpeg', '40764_right.jpeg'.
+For testing images: '13227_left.jpeg', '26250_left.jpeg', '5371_left.jpeg'.
  
 ----------------
 ## -Reference:
