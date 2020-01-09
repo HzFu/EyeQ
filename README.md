@@ -20,7 +20,7 @@ EyeQ dataset has 28,792 retinal images with a three-level quality grading (i.e.,
 Good   | 6,342 | 699  | 1,100 | 167  |  39  | 8,347  | 5,966  |  886  | 1,354 | 199  |  65  | 8,470  | 16,817 |    
 Usable | 1,353 | 103  |  283  |  79  |  58  | 1,876  | 3,201  |  359  |  721  | 145  | 133  | 4,559  | 6,435  |     
 Reject | 1,544 | 109  |  426  |  87  | 154  | 2,320  | 2,195  |  153  |  569  | 104  | 199  | 3,220  | 5,540  |    
-Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 448  | 397  | 16,249 | 28,792 |
+Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 11,362 | 1,398 | 2,644 | 448  | 397  | 16,249 | 28,792 |
 
 
 ----------------
@@ -39,13 +39,17 @@ Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 
 For training images: '15337_left.jpeg', '40764_right.jpeg'.
 For testing images: '13227_left.jpeg', '26250_left.jpeg', '5371_left.jpeg'.
  
+
+
 ----------------
 ## -Reference:
 
 If you use this dataset and code, please cite the following papers:
 
 [1] Huazhu Fu, Boyang Wang, Jianbing Shen, Shanshan Cui, Yanwu Xu, Jiang Liu, Ling Shao, "Evaluation of Retinal Image Quality Assessment Networks in Different Color-spaces", in MICCAI, 2019. [[PDF]](https://arxiv.org/abs/1907.05345)
-
+**Note:** In the MICCAI version, there are two typos in Table 1 as:
+1. In training set, the number of "Usable + All" should be '1,876'.
+2. In testing set, the number of "Total + DR-0" should be '11,362'.
 
 
 
