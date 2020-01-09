@@ -18,7 +18,7 @@ EyeQ dataset has 28,792 retinal images with a three-level quality grading (i.e.,
 | ---  | ---   | ---  | ---   |---   |---   | ---    |  ---   | ---   | ---   | ---  | ---  | ---    |  ---   |
 |      | DR-0  | DR-1 | DR-2  | DR-3 | DR-4 |  All   |  DR-0  | DR-1  | DR-2  | DR-3 | DR-4 |  All   |        |          
 Good   | 6,342 | 699  | 1,100 | 167  |  39  | 8,347  | 5,966  |  886  | 1,354 | 199  |  65  | 8,470  | 16,817 |    
-Usable | 1,353 | 103  |  283  |  79  |  58  | 1,896  | 3,201  |  359  |  721  | 145  | 133  | 4,559  | 6,435  |     
+Usable | 1,353 | 103  |  283  |  79  |  58  | 1,876  | 3,201  |  359  |  721  | 145  | 133  | 4,559  | 6,435  |     
 Reject | 1,544 | 109  |  426  |  87  | 154  | 2,320  | 2,195  |  153  |  569  | 104  | 199  | 3,220  | 5,540  |    
 Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 448  | 397  | 16,249 | 28,792 |
 
@@ -31,6 +31,7 @@ Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 
 2. All the original fundus images should be pre-porcessed by *'EyeQ\_process\_main.py'* in folder './EyeQ_preprocess'.
 3. The quality label is in './data' folder, where the *'Label\_EyeQ\_train.csv'* and *'Label\_EyeQ\_test.csv'* are divided by EyePACS, and the 'DR\_grade' label is also from EyePACS.
 4. We also release our Multiple Color-space Fusion Network (MCF-Net) based on ResNet121 in './MCFNet' folder. 
+
 
 **Note:** The trained model  of MCF-Net *'DenseNet121\_v3\_v1.tar'* (~112MB) could be download from [OneDrive](https://1drv.ms/u/s!ArBRrL8ao6jznU6IQflxPqM3-VXC?e=wNcWvD).
 
