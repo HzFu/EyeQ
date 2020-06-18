@@ -1,5 +1,5 @@
 import numpy as np
-from sklearn.metrics import f1_score, confusion_matrix, roc_curve, roc_auc_score, cohen_kappa_score
+from sklearn.metrics import f1_score, confusion_matrix, roc_curve, roc_auc_score, accuracy_score
 
 
 def compute_metric(datanpGT, datanpPRED, target_names):
@@ -12,6 +12,7 @@ def compute_metric(datanpGT, datanpPRED, target_names):
     fn = np.zeros([n_class, 1])
     tp = np.zeros([n_class, 1])
 
+    Accuracy_score = accuracy_score(datanpGT, argmaxPRED)
     ROC_curve = {}
     mAUC = 0
 
@@ -36,17 +37,18 @@ def compute_metric(datanpGT, datanpPRED, target_names):
         'class_name': target_names,
         'F1': F1_metric,
         'AUC': mAUC / 3,
-        'Accuracy': (tp + tn) / (tn + fp + fn + tp),
+        'Accuracy': Accuracy_score,
+
         'Sensitivity': tp / (tp + fn),
         'Precision': tp / (tp + fp),
         'Specificity': tn / (fp + tn),
         'ROC_curve': ROC_curve,
         'tp': tp, 'tn': tn, 'fp': fp, 'fn': fn,
-        'mAccuracy': sum(tp+tn) / sum(tn + fp + fn + tp),
-        'mPrecision': mPrecision,
-        'mSensitivity': mRecall,
-        'mSpecificity': sum(tn) / sum(fp + tn),
-        'mF1': 2*mPrecision * mRecall / (mPrecision + mRecall),
+
+        'micro-Precision': mPrecision,
+        'micro-Sensitivity': mRecall,
+        'micro-Specificity': sum(tn) / sum(fp + tn),
+        'micro-F1': 2*mPrecision * mRecall / (mPrecision + mRecall),
     }
 
     return output
