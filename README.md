@@ -34,7 +34,7 @@ Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 
 
 **Note:** The trained model  of MCF-Net *'DenseNet121\_v3\_v1.tar'* (~112MB) could be download from [OneDrive](https://1drv.ms/u/s!ArBRrL8ao6jznU6RCbo60oStjPWZ?e=3g1VOG).
 
-**Note:** The original metric scores of MCF-Net in MICCAI version are corrected. The corrected scores are: Accuracy = 0.8800; Precision = 0.8651; Sensitivity = 0.8574; F1 = 0.8606
+**Note:** The result of MCF-Net in MICCAI version are different. The enclosed scores are: Accuracy = 0.8800; Precision = 0.8651; Sensitivity = 0.8574; F1 = 0.8606
 
  
 ----------------
