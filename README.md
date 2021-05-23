@@ -41,7 +41,7 @@ Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 
 
 If you use this dataset and code, please cite the following papers:
 
-[1] Huazhu Fu, Boyang Wang, Jianbing Shen, Shanshan Cui, Yanwu Xu, Jiang Liu, Ling Shao, "Evaluation of Retinal Image Quality Assessment Networks in Different Color-spaces", in MICCAI, 2019. [[PDF]](https://arxiv.org/abs/1907.05345) **Note:** The corrected scores of MCF-Net are: Accuracy = 0.8800; Precision = 0.8651; Sensitivity = 0.8574; F1 = 0.8606.
+[1] Huazhu Fu, Boyang Wang, Jianbing Shen, Shanshan Cui, Yanwu Xu, Jiang Liu, Ling Shao, "Evaluation of Retinal Image Quality Assessment Networks in Different Color-spaces", in MICCAI, 2019. [[PDF]](https://arxiv.org/abs/1907.05345) **Note:** The corrected accuracy score of MCF-Net is 0.8800.
 
 
 
