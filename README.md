@@ -1,6 +1,9 @@
 # Eye-Quality (EyeQ) Assessment Dataset 
 
-The project web for "Evaluation of Retinal Image Quality Assessment Networks in Different Color-spaces" in MICCAI 2019.
+The project web for ***"Evaluation of Retinal Image Quality Assessment Networks in Different Color-spaces"*** in MICCAI 2019.
+
+**Fundus Enhancement:**
+We also have a related work for ***"Modeling and Enhancing Low-quality Retinal Fundus Images"*** in IEEE TMI, 2021. The code is released in [Github: Cofe-Net](https://github.com/joanshen0508/Fundus-correction-cofe-Net)
 
 ----------------
 
@@ -44,12 +47,13 @@ If you use this dataset and code, please cite the following papers:
 [1] Huazhu Fu, Boyang Wang, Jianbing Shen, Shanshan Cui, Yanwu Xu, Jiang Liu, Ling Shao, "Evaluation of Retinal Image Quality Assessment Networks in Different Color-spaces", in MICCAI, 2019. [[PDF]](https://arxiv.org/abs/1907.05345) **Note:** The corrected accuracy score of MCF-Net is 0.8800.
 
 
-
-
 ----------------
+
+
 
 Update log:
 
+- 21.12.29: Added link for fundus enhancement project.
 - 20.06.18: Corrected the accuracy score.
 - 19.11.15: Released the code of MCF-Net.
 - 19.07.10: Released the dataset.
