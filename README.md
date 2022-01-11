@@ -47,6 +47,12 @@ If you use this dataset and code, please cite the following papers:
 [1] Huazhu Fu, Boyang Wang, Jianbing Shen, Shanshan Cui, Yanwu Xu, Jiang Liu, Ling Shao, "Evaluation of Retinal Image Quality Assessment Networks in Different Color-spaces", in MICCAI, 2019. [[PDF]](https://arxiv.org/abs/1907.05345) **Note:** The corrected accuracy score of MCF-Net is 0.8800.
 
 
+---
+## -License:
+
+The code is released under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) for NonCommercial use only. Any commercial use should get formal permission first.
+
+
 ----------------
 
 
