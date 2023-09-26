@@ -66,7 +66,7 @@ def _get_radius_by_mask_center(mask,center):
     # radius=
     index=np.where(mask>0)
     d_int=np.sqrt((index[0]-center[0])**2+(index[1]-center[1])**2)
-    b_count=np.bincount(np.ceil(d_int).astype(np.int))
+    b_count=np.bincount(np.ceil(d_int).astype(np.int64))
     radius=np.where(b_count>b_count.max()*0.995)[0].max()
     return radius
 
@@ -115,7 +115,7 @@ def mask_image(img,mask):
 def remove_back_area(img,bbox=None,border=None):
     image=img
     if border is None:
-        border=np.array((bbox[0],bbox[0]+bbox[2],bbox[1],bbox[1]+bbox[3],img.shape[0],img.shape[1]),dtype=np.int)
+        border=np.array((bbox[0],bbox[0]+bbox[2],bbox[1],bbox[1]+bbox[3],img.shape[0],img.shape[1]),dtype=np.int64)
     image=image[border[0]:border[1],border[2]:border[3],...]
     return image,border
 
