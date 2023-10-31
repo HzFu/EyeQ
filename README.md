@@ -35,7 +35,7 @@ Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 
 3. The quality label is in './data' folder, where the *'Label\_EyeQ\_train.csv'* and *'Label\_EyeQ\_test.csv'* are divided by EyePACS, and the 'DR\_grade' label is also from EyePACS.
 4. We also release our Multiple Color-space Fusion Network (MCF-Net) based on ResNet121 in './MCFNet' folder. 
 
-**Note:** The trained model  of MCF-Net *'DenseNet121\_v3\_v1.tar'* (~112MB) could be download from [OneDrive](https://1drv.ms/u/s!ArBRrL8ao6jznU6RCbo60oStjPWZ?e=3g1VOG).
+**Note:** The trained model  of MCF-Net *'DenseNet121\_v3\_v1.tar'* (~112MB) could be download from [OneDrive](https://1drv.ms/u/s!ArBRrL8ao6jznU6RCbo60oStjPWZ?e=qQmzST).
 
 
 
