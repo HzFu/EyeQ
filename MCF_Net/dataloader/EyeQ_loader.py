@@ -5,7 +5,10 @@ from torch.utils.data import Dataset
 from PIL import Image, ImageCms
 import os
 from sklearn import preprocessing
+from typing import Optional, Callable
 import pandas as pd
+
+import torchvision.transforms as T
 
 
 def load_eyeQ_excel(data_dir, list_file, n_class=3):
@@ -63,10 +66,44 @@ class DatasetGenerator(Dataset):
 
         if self.set_name == 'train':
             label = self.labels[index]
-            return torch.FloatTensor(img_rgb), torch.FloatTensor(img_hsv), torch.FloatTensor(img_lab), torch.FloatTensor(label)
+            return torch.FloatTensor(img_rgb), torch.FloatTensor(img_hsv), torch.FloatTensor(
+                img_lab), torch.FloatTensor(label)
         else:
             return torch.FloatTensor(img_rgb), torch.FloatTensor(img_hsv), torch.FloatTensor(img_lab)
 
     def __len__(self):
         return len(self.image_names)
 
+
+class InfrenceDataSet(Dataset):
+    def __init__(self, img_paths: list, pre_transform: Optional[Callable] = None,
+                 post_transform: Callable = T.ToTensor()) -> None:
+        self.img_paths = img_paths
+        self.pre_transform = pre_transform
+        self.post_transform = post_transform
+        srgb_profile = ImageCms.createProfile("sRGB")
+        lab_profile = ImageCms.createProfile("LAB")
+        self.rgb2lab_transform = ImageCms.buildTransformFromOpenProfiles(srgb_profile, lab_profile, "RGB", "LAB")
+
+    def __getitem__(self, index):
+        image_name = self.img_paths[index]
+        image = Image.open(image_name).convert('RGB')
+
+        if self.pre_transform is not None:
+            image = self.pre_transform(image)
+
+        img_hsv = image.convert("HSV")
+        img_lab = ImageCms.applyTransform(image, self.rgb2lab_transform)
+
+        img_rgb = np.asarray(image).astype('float32')
+        img_hsv = np.asarray(img_hsv).astype('float32')
+        img_lab = np.asarray(img_lab).astype('float32')
+
+        img_rgb = self.post_transform(img_rgb)
+        img_hsv = self.post_transform(img_hsv)
+        img_lab = self.post_transform(img_lab)
+
+        return self.img_paths[index], (img_rgb, img_hsv, img_lab)
+
+    def __len__(self):
+        return len(self.img_paths)
