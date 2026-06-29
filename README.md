@@ -9,7 +9,7 @@ We also have a related work for ***"Modeling and Enhancing Low-quality Retinal F
 
 ## -Introduction:
 
-Eye-Quality (EyeQ) Assessment Dataset is a re-annotatation subset from the [EyePACS dataset](https://www.kaggle.com/c/diabetic-retinopathy-detection) for fundus image quality assessment. 
+Eye-Quality (EyeQ) Assessment Dataset is a re-annotated subset from the [EyePACS dataset](https://www.kaggle.com/c/diabetic-retinopathy-detection) for fundus image quality assessment. 
 
 EyeQ dataset has 28,792 retinal images with a three-level quality grading (i.e., 'Good', 'Usable' and 'Reject').
 
@@ -31,12 +31,11 @@ Total  | 9,239 | 911  | 1,809 | 333  | 251  | 12,543 | 1,1362 | 1,398 | 2,644 | 
 ## -Usage:
 
 1. The original fundus images could be downloaded from  [EyePACS dataset](https://www.kaggle.com/c/diabetic-retinopathy-detection). 
-2. All the original fundus images should be pre-porcessed by *'EyeQ\_process\_main.py'* in folder './EyeQ_preprocess'.
+2. All the original fundus images should be pre-processed by *'EyeQ\_process\_main.py'* in folder './EyeQ_preprocess'.
 3. The quality label is in './data' folder, where the *'Label\_EyeQ\_train.csv'* and *'Label\_EyeQ\_test.csv'* are divided by EyePACS, and the 'DR\_grade' label is also from EyePACS.
 4. We also release our Multiple Color-space Fusion Network (MCF-Net) based on ResNet121 in './MCFNet' folder. 
 
-**Note:** ~~The trained model  of MCF-Net *'DenseNet121\_v3\_v1.tar'* (~112MB) could be download from OneDrive.~~ 
-The original weights of MCF-Net are no longer usable due to several version updates. We recommend re-training the model using the code available on our GitHub repository.
+**Note:**  The original weights of MCF-Net are no longer usable due to several version updates. We recommend re-training the model using the code available on our GitHub repository.
 
 
 
@@ -60,7 +59,7 @@ The code is released under the [Creative Commons Attribution-NonCommercial-Share
 
 Update log:
 
-- 21.12.29: Added link for fundus enhancement project.
-- 20.06.18: Corrected the accuracy score.
-- 19.11.15: Released the code of MCF-Net.
-- 19.07.10: Released the dataset.
+- 2021.12.29: Added link for fundus enhancement project.
+- 2020.06.18: Corrected the accuracy score.
+- 2019.11.15: Released the code of MCF-Net.
+- 2019.07.10: Released the dataset.
